@@ -101,12 +101,15 @@ main #contenido-principal .contenido-texto .btn-verCarta {
     font-weight: bold;
     font-size: 0.9rem;
     cursor: pointer;
-    transition: background-color 0.3s ease;
+    transform: translateX(0);
+    transition: transform 0.3s ease; /* Agrega una transición suave para el movimiento */
 }
 
 main #contenido-principal .contenido-texto .btn-verCarta:hover {
     transition: background-color 0.3s ease;
     background-color: #4A3B32;
+    transform: translateX(5px);
+    transition: transform 0.3s ease; 
 }
 
 main #contenido-principal .contenido-imagen {
@@ -118,6 +121,68 @@ main #contenido-principal .contenido-imagen {
     object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área asignada */
     border-radius: 10px;
     box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+}
+
+
+main #contenido-destacado {
+    border: 10px solid rgb(0, 255, 247);
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contenido-destacado .contenido-texto {
+    border: 10px solid rgb(43, 129, 205);
+    padding: 1rem;
+    width: 70%;
+}
+
+main #contenido-destacado .contenido-texto h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+}
+
+main #contenido-destacado .contenido-texto p {
+    line-height: 2rem;
+    font-size: 1.2rem;
+}
+
+main #contenido-destacado .caracteristicas {
+    border: 10px solid purple;
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+}
+
+main #contenido-destacado .caracteristicas .caracteristica {
+    border: none;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    background-color: #fff5e7c8;
+    padding: 1.8rem;
+    flex: 1; /* Permite que cada característica ocupe el mismo espacio disponible */
+    transition: transform 0.3s ease; 
+}
+
+main #contenido-destacado .caracteristicas .caracteristica:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2); /* Agrega una sombra más pronunciada al hacer hover */
+}
+
+main #contenido-destacado .caracteristicas .caracteristica-imagen {
+    margin: 10px 0;
+    border: none;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área asignada */
 }
 
 footer {
