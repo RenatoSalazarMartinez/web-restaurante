@@ -56,10 +56,15 @@ nav .btn-reservar {
     color: #4A3B32;
     font-weight: bold;
     cursor: pointer;
+    transform: translateX(0);
+    transition: transform 0.3s ease;
 }
 
 nav .btn-reservar:hover {
     background-color: #fff5e7;
+    transition: background-color 0.3s ease;
+    transform: translateX(-5px);
+    transition: transform 0.3s ease;
 }
 
 nav .btn-reservar:active {
@@ -67,15 +72,16 @@ nav .btn-reservar:active {
 }
 
 main #contenido-principal {
-    border: 10px solid red;
+    /*border: 10px solid red;*/
     display: flex;
     flex-direction: row;
     padding: 2rem;
     gap: 3rem;
+    margin: 1rem 0;
 }
 
 main #contenido-principal .contenido-texto {
-    border: 10px solid blue;
+    /*border: 10px solid blue;*/
     font-size: 1.2rem;
     text-align: justify;
     padding: 1.5rem;
@@ -112,9 +118,6 @@ main #contenido-principal .contenido-texto .btn-verCarta:hover {
     transition: transform 0.3s ease; 
 }
 
-main #contenido-principal .contenido-imagen {
-    border: 10px solid green;
-}
 .hero-image {
     width: 100%;
     height: auto;
@@ -125,7 +128,7 @@ main #contenido-principal .contenido-imagen {
 
 
 main #contenido-destacado {
-    border: 10px solid rgb(0, 255, 247);
+    /*border: 10px solid rgb(0, 255, 247);*/
     padding: 1.5rem;
     text-align: center;
     line-height: 1.8rem;
@@ -134,10 +137,11 @@ main #contenido-destacado {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 1rem 0;
 }
 
 main #contenido-destacado .contenido-texto {
-    border: 10px solid rgb(43, 129, 205);
+    /*border: 10px solid rgb(43, 129, 205);*/
     padding: 1rem;
     width: 70%;
 }
@@ -153,7 +157,7 @@ main #contenido-destacado .contenido-texto p {
 }
 
 main #contenido-destacado .caracteristicas {
-    border: 10px solid purple;
+    /*border: 10px solid purple;*/
     display: flex;
     gap: 1.5rem;
     margin-top: 0.5rem;
@@ -186,15 +190,16 @@ main #contenido-destacado .caracteristicas .caracteristica-imagen {
 }
 
 main #contenedor-testimonios {
-    border: 10px solid rgb(255, 0, 0);
+    /*border: 10px solid rgb(255, 0, 0);*/
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     padding: 2rem;
+    margin: 1rem 0;
 }
 
 main #contenedor-testimonios .contenido-texto {
-    border: 10px solid rgb(0, 255, 0);
+    /*border: 10px solid rgb(0, 255, 0);*/
     padding: 1.5rem;
     text-align: center;
     line-height: 1.8rem;
@@ -238,7 +243,7 @@ main #contenedor-testimonios .contenido-texto .btn-verResenas:hover {
 }
 
 main #contenedor-testimonios .testimonios {
-    border: 10px solid rgb(224, 57, 227);
+    /*border: 10px solid rgb(224, 57, 227);*/
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
