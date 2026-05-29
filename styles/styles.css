@@ -185,6 +185,102 @@ main #contenido-destacado .caracteristicas .caracteristica-imagen {
     object-fit: cover; /* Asegura que la imagen mantenga su proporción y cubra el área asignada */
 }
 
+main #contenedor-testimonios {
+    border: 10px solid rgb(255, 0, 0);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+    padding: 2rem;
+}
+
+main #contenedor-testimonios .contenido-texto {
+    border: 10px solid rgb(0, 255, 0);
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    margin: auto;
+}
+
+main #contenedor-testimonios .contenido-texto h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    line-height: 2.5rem;
+}
+
+main #contenedor-testimonios .contenido-texto .calificacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+main #contenedor-testimonios .contenido-texto .btn-verResenas{
+    margin-top: 1.5rem;
+    background-color: #393330;
+    color: #fff;
+    padding: 0.7rem 1.5rem;
+    border: none;
+    border-radius: 7px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s ease; /* Agrega una transición suave para el movimiento */
+}
+
+main #contenedor-testimonios .contenido-texto .btn-verResenas:hover {
+    transition: background-color 0.3s ease;
+    background-color: #4A3B32;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease; 
+}
+
+main #contenedor-testimonios .testimonios {
+    border: 10px solid rgb(224, 57, 227);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    padding: 1.5rem;
+}
+
+main #contenedor-testimonios .testimonio {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    text-align: justify;
+    gap: 1rem;
+    border: none;
+    background-color: #fff5e7c8;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 45%; /* Asegura que cada testimonio ocupe todo el ancho disponible dentro de su contenedor */
+    justify-items: center; /* Centra el contenido dentro de cada testimonio */
+    overflow: hidden;
+}
+
+main #contenedor-testimonios .testimonio .nombre-persona {
+    font-weight: bold;
+    font-size: 1.1rem;
+}
+
+main #contenedor-testimonios .testimonio p {
+    font-size: 1rem;
+    line-height: 1.5rem;
+    text-align: center;
+    margin: auto;
+}
+
+main #contenedor-testimonios .testimonio .testimonio-imagen {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
 footer {
     background-color: #393330;
     color: #fff;
