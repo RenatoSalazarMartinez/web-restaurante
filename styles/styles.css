@@ -490,7 +490,7 @@ main #historia .contenido .imagen-historia{
 main #objetivo-restaurante {
     /*border: 10px solid salmon;*/
     background-image: url("/assets/img/ImgObjetivos.jpeg");
-    height: 100vh;
+    height: 120vh;
     background-size: cover;
     background-attachment: fixed;
     color: #f4f4f4;
@@ -498,7 +498,7 @@ main #objetivo-restaurante {
 
 main #objetivo-restaurante .capa-oscura{
     background: rgba(55, 56, 57, 0.7);
-    height: 100vh;
+    height: 120vh;
     /*border: 10px solid rgb(130, 61, 54);*/
     justify-content: center;
     align-content: center;
@@ -509,7 +509,7 @@ main #objetivo-restaurante .capa-oscura h2{
     text-align: center;
     align-content: center;
     font-size: 2rem;
-    margin-bottom: 7rem;
+    margin-bottom: 9rem;
 }
 
 main #objetivo-restaurante .contenido {
@@ -535,4 +535,88 @@ main #objetivo-restaurante .contenido-grupo {
 
 main #objetivo-restaurante .contenido:not(:last-child) {
     border-right: 2px solid rgba(255, 255, 255, 0.941); /* Línea blanca semi-transparente */
+}
+
+main #equipo-restaurante {
+    border: 10px solid fuchsia;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 10px;
+}
+
+main #equipo-restaurante .contenido-texto {
+    border: 10px solid rgb(25, 21, 137);
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    width: 70%;
+}
+
+main #equipo-restaurante .contenido-texto h2{
+    border: 10px solid rebeccapurple;
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    padding: 15px;
+}
+main #equipo-restaurante .contenido-texto h2 i{
+    margin-right: 15px;
+}
+
+main #equipo-restaurante .contenido-texto p{
+    border: 10px solid rgb(112, 153, 51);
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    padding: 15px;
+    line-height: 2rem;
+}
+
+main #equipo-restaurante .presentacion-equipo {
+    border: 10px solid rgb(255, 0, 30);
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+main #equipo-restaurante .presentacion-equipo .personal{
+    width: 30%; /* Asegura que cada testimonio ocupe todo el ancho disponible dentro de su contenedor */
+    padding: 20px; 
+    text-align: center;
+    gap: 1rem;
+    border: none;
+    background-color: #fff5e7c8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    justify-items: center; /* Centra el contenido dentro de cada testimonio */
+    overflow: hidden;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+main #equipo-restaurante .presentacion-equipo .personal:hover{
+    transform: translateY(-5px);
+    transition: all 0.3s ease;
+    box-shadow: 0 7px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+main #equipo-restaurante .presentacion-equipo .personal .personal-imagen{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+}
+
+main #equipo-restaurante .presentacion-equipo .personal ul{
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    list-style: none;
+}
+
+main #equipo-restaurante .presentacion-equipo .personal ul li{
+    padding: 5px 0;
 }
