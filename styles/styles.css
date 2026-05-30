@@ -486,3 +486,53 @@ main #historia .contenido .imagen-historia{
     object-fit: cover;
     border-radius: 5px;
 }
+
+main #objetivo-restaurante {
+    /*border: 10px solid salmon;*/
+    background-image: url("/assets/img/ImgObjetivos.jpeg");
+    height: 100vh;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #f4f4f4;
+}
+
+main #objetivo-restaurante .capa-oscura{
+    background: rgba(55, 56, 57, 0.7);
+    height: 100vh;
+    /*border: 10px solid rgb(130, 61, 54);*/
+    justify-content: center;
+    align-content: center;
+}
+
+main #objetivo-restaurante .capa-oscura h2{
+    /*border: 10px solid forestgreen;*/
+    text-align: center;
+    align-content: center;
+    font-size: 2rem;
+    margin-bottom: 7rem;
+}
+
+main #objetivo-restaurante .contenido {
+    /*border: 10px solid rgb(72, 53, 194);*/
+    padding: 10px;
+    margin: auto;
+}
+
+main #objetivo-restaurante .contenido p{
+    /*border: 10px solid rgb(53, 194, 163);*/
+    padding: 20px;
+    line-height: 2rem;
+}
+
+main #objetivo-restaurante .contenido-grupo {
+    /*border: 10px solid rgb(4, 242, 56);*/
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    text-align: center;
+    font-size: 1.4rem;
+    gap: 20x;
+}
+
+main #objetivo-restaurante .contenido:not(:last-child) {
+    border-right: 2px solid rgba(255, 255, 255, 0.941); /* Línea blanca semi-transparente */
+}
