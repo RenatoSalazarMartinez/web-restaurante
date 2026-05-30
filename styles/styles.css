@@ -396,3 +396,93 @@ footer .copyright {
     color: #ffffff;
     padding-bottom: 1rem;
 }
+
+
+main #presentacion-contenido{
+    background-image: url("/assets/img/ImgFondoNosotros.jpeg");
+    background-size: cover;
+    height: 100vh;
+    overflow: hidden;
+    justify-content: center;
+}
+
+main #presentacion-contenido .capa-oscura{
+    background: rgba(55, 56, 57, 0.7);
+    height: 100vh;   
+    /*border: 10px solid crimson;*/
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main #presentacion-contenido .capa-oscura .contenido-capa{
+    /*border: 10px solid rgb(47, 220, 20);*/
+    text-align: center;
+    color: #fff;
+    line-height: 1.8rem;
+    font-size: 1.8rem;
+    padding: 30px;
+}
+
+main #presentacion-contenido .capa-oscura .contenido-capa h2{
+    /*border: 10px solid rgb(38, 130, 23);*/
+    margin-bottom: 1rem;
+    padding: 10px;
+}
+
+main #presentacion-contenido .capa-oscura .contenido-capa .btn-reserva{
+    border: 3px solid white;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+main #presentacion-contenido .capa-oscura .contenido-capa .btn-reserva:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    transition: 0.3 ease;
+}
+
+main #historia{
+    /*border: 10px solid cornflowerblue;*/
+}
+
+main #historia .contenido{
+    /*border: 10px solid rgb(79, 110, 168);*/
+    display: flex;
+    gap: 10px;
+}
+
+main #historia .contenido .contenido-texto{
+    /*border: 10px solid rgb(46, 64, 97);*/
+    padding: 40px;
+    margin-bottom: 10px;
+    text-align: justify;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+}
+main #historia .contenido .contenido-texto h2{
+    /*border: 10px solid rgb(39, 217, 190);*/
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+main #historia .contenido .contenido-texto p{
+    /*border: 10px solid rgb(39, 217, 190);*/
+    padding: 15px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+
+main #historia .contenido .imagen-historia{
+    width: 50%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
