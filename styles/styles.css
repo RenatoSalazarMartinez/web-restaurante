@@ -286,6 +286,48 @@ main #contenedor-testimonios .testimonio .testimonio-imagen {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
+main #ubicacion {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    /*border: 10px solid rgb(255, 0, 255);*/
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    margin: 1rem 0;
+}
+
+main #ubicacion .contenido-texto {
+    /*border: 10px solid rgb(0, 255, 255);*/
+    padding: 1.5rem;
+    text-align: center;
+    line-height: 1.8rem;
+    font-size: 1.2rem;
+    text-align: justify;
+}
+
+main #ubicacion .contenido-texto h2 {
+    margin-bottom: 1.2rem;
+    font-size: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    gap : 1.5rem;
+    align-items: center;
+    /*border: 10px solid rgb(255, 255, 0);*/
+    padding: 1rem;
+}
+
+main #ubicacion .contenido-texto p{
+    /*border: #393330 10px solid;*/
+    padding: 1rem;
+}
+
+main .separacion{
+    border:none;
+    border-top: 2px solid #bdae99;
+    margin: 0 2rem;
+}
+
 footer {
     background-color: #393330;
     color: #fff;
