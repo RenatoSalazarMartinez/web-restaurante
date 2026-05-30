@@ -333,7 +333,6 @@ footer {
     color: #fff;
     text-align: center;
     padding: 1rem;
-    margin-top: 2rem;
 }
 
 footer .footer-content {
@@ -538,14 +537,21 @@ main #objetivo-restaurante .contenido:not(:last-child) {
 }
 
 main #equipo-restaurante {
-    border: 10px solid fuchsia;
+    /*border: 10px solid fuchsia;*/
     display: grid;
     grid-template-columns: repeat(1, 1fr);
     gap: 10px;
+    margin-bottom: 20px;
+}
+
+main #equipo-restaurante hr {
+    margin: 1rem 12rem;
+    border: none;
+    border-top: 2px solid #7b7265c8;
 }
 
 main #equipo-restaurante .contenido-texto {
-    border: 10px solid rgb(25, 21, 137);
+    /*border: 10px solid rgb(25, 21, 137);*/
     margin: auto;
     padding: 20px;
     text-align: center;
@@ -553,7 +559,7 @@ main #equipo-restaurante .contenido-texto {
 }
 
 main #equipo-restaurante .contenido-texto h2{
-    border: 10px solid rebeccapurple;
+    /*border: 10px solid rebeccapurple;*/
     font-size: 2rem;
     margin-bottom: 1rem;
     padding: 15px;
@@ -563,15 +569,14 @@ main #equipo-restaurante .contenido-texto h2 i{
 }
 
 main #equipo-restaurante .contenido-texto p{
-    border: 10px solid rgb(112, 153, 51);
+    /*border: 10px solid rgb(112, 153, 51);*/
     font-size: 1.4rem;
-    margin-bottom: 1rem;
     padding: 15px;
     line-height: 2rem;
 }
 
 main #equipo-restaurante .presentacion-equipo {
-    border: 10px solid rgb(255, 0, 30);
+    /*border: 10px solid rgb(255, 0, 30);*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -619,4 +624,12 @@ main #equipo-restaurante .presentacion-equipo .personal ul{
 
 main #equipo-restaurante .presentacion-equipo .personal ul li{
     padding: 5px 0;
+}
+
+main #mapa-restaurante {
+    height: 80vh;
+}
+
+main #mapa-restaurante .mapa iframe{
+    height: 80vh;
 }
