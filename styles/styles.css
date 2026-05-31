@@ -633,3 +633,59 @@ main #mapa-restaurante {
 main #mapa-restaurante .mapa iframe{
     height: 80vh;
 }
+
+
+/*ESTILOS DE LA CARTA.HTML*/
+main #carta-contenido {
+    /*border: 10px solid blue;*/
+    background-image: url("/assets/img/ImgFondoCarta.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+main #carta-contenido .capa-oscura{
+    /*border: 10px solid rgb(0, 255, 221);*/
+    height: 100vh;
+    background: rgba(55, 56, 57, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #carta-contenido .capa-oscura .contenido{
+    /*border: 10px solid rebeccapurple;*/
+    padding: 30px;
+    width: 60%;
+    font-size: 1.8rem;
+}
+
+main #carta-contenido .capa-oscura .contenido h2{
+    margin-bottom: 1rem;
+}
+
+main #carta-contenido .capa-oscura .contenido p {
+    line-height: 2.5rem;
+}
+
+main #carta-contenido .capa-oscura .contenido #btn-verCarta{
+    border: 3px solid white;
+    border-radius: 40px;
+    margin-top: 20px;
+    margin-bottom: 1rem;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+}
+
+main #carta-contenido .capa-oscura .contenido #btn-verCarta:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    transition: 0.3 ease;
+}
+
