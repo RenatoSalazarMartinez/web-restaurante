@@ -690,7 +690,7 @@ main #carta-contenido .capa-oscura .contenido #btn-verCarta:hover{
 }
 
 main #entradas-carta {
-    border: 10px solid forestgreen;
+    /*border: 10px solid forestgreen;*/
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -698,7 +698,7 @@ main #entradas-carta {
 }
 
 main #entradas-carta .presentacion{
-    border: 10px solid aqua;
+    /*border: 10px solid aqua;*/
     text-align: center;
     padding: 30px;
     font-size: 1.5rem;
@@ -706,7 +706,7 @@ main #entradas-carta .presentacion{
 }
 
 main #entradas-carta .platos-grid-layout{
-    border: 10px solid rgb(6, 240, 29);
+    /*border: 10px solid rgb(6, 240, 29);*/
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
@@ -715,7 +715,7 @@ main #entradas-carta .platos-grid-layout{
 }
 
 main #entradas-carta .platos-grid-layout .plato-tarjeta{
-    border: 10px solid cornflowerblue;
+    border: none;
     background-size: cover;
     background-position: center;
     height: 40vh;
@@ -723,10 +723,13 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta{
     color: white;
     position: relative;
     overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px 0px;
 }
 
 main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa{
-    border: 10px solid teal;
+    border: none;
     background: rgba(55, 56, 57, 0.85); /* Color gris oscuro con opacidad */
     position: absolute;
     top: 0;
@@ -769,7 +772,35 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
 }
 .entrada-4 {
     background-image: url("/assets/img/ImgPlatoEntrada4.jpeg"); 
-}
+} 
 .entrada-5 {
     background-image: url("/assets/img/ImgPlatoEntrada5.jpeg"); 
 }
+
+
+/*CORTES*/
+.corte-1 {
+    background-image: url("/assets/img/ImgPlatoCorte1.jpeg"); 
+}
+.corte-2 {
+    background-image: url("/assets/img/ImgPlatoCorte2.jpeg");
+}
+.corte-3 {
+    background-image: url("/assets/img/ImgPlatoCorte3.jpeg"); 
+}
+.corte-4 {
+    background-image: url("/assets/img/ImgPlatoCorte4.jpeg"); 
+}
+.corte-5 {
+    background-image: url("/assets/img/ImgPlatoCorte5.jpeg"); 
+}
+.corte-6 {
+    background-image: url("/assets/img/ImgPlatoCorte6.jpeg"); 
+}
+.corte-7 {
+    background-image: url("/assets/img/ImgPlatoCorte7.jpeg"); 
+}
+.corte-8 {
+    background-image: url("/assets/img/ImgPlatoCorte8.jpeg"); 
+}
+
