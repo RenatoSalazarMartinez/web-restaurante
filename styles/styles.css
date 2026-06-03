@@ -804,3 +804,24 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
     background-image: url("/assets/img/ImgPlatoCorte8.jpeg"); 
 }
 
+
+/*CORTES*/
+.guarnicion-1 {
+    background-image: url("/assets/img/ImgPlatoGuarnicion1.jpeg"); 
+}
+.guarnicion-2 {
+    background-image: url("/assets/img/ImgPlatoGuarnicion2.jpeg");
+}
+.guarnicion-3 {
+    background-image: url("/assets/img/ImgPlatoGuarnicion3.jpeg"); 
+}
+.guarnicion-4 {
+    background-image: url("/assets/img/ImgPlatoGuarnicion4.jpeg"); 
+}
+.guarnicion-5 {
+    background-image: url("/assets/img/ImgPlatoGuarnicion5.jpeg"); 
+}
+.guarnicion-6 {
+    background-image: url("/assets/img/ImgPlatoGuarnicion6.jpeg"); 
+} 
+
