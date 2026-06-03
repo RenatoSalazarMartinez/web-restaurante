@@ -805,7 +805,7 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
 }
 
 
-/*CORTES*/
+/*GUARNICIONES*/
 .guarnicion-1 {
     background-image: url("/assets/img/ImgPlatoGuarnicion1.jpeg"); 
 }
@@ -824,4 +824,22 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
 .guarnicion-6 {
     background-image: url("/assets/img/ImgPlatoGuarnicion6.jpeg"); 
 } 
+
+
+/*POSTRES*/
+.postre-1 {
+    background-image: url("/assets/img/ImgPlatoPostre1.jpeg"); 
+}
+.postre-2 {
+    background-image: url("/assets/img/ImgPlatoPostre2.jpeg");
+}
+.postre-3 {
+    background-image: url("/assets/img/ImgPlatoPostre3.jpeg"); 
+}
+.postre-4 {
+    background-image: url("/assets/img/ImgPlatoPostre4.jpeg"); 
+}
+.postre-5 {
+    background-image: url("/assets/img/ImgPlatoPostre5.jpeg");  
+}
 
