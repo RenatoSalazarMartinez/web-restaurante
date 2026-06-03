@@ -843,3 +843,21 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
     background-image: url("/assets/img/ImgPlatoPostre5.jpeg");  
 }
 
+
+/*BEBIDAS*/
+.bebida-1 {
+    background-image: url("/assets/img/ImgBebida1.jpeg"); 
+}
+.bebida-2 {
+    background-image: url("/assets/img/ImgBebida2.jpeg");
+}
+.bebida-3 {
+    background-image: url("/assets/img/ImgBebida3.jpeg"); 
+}
+.bebida-4 {
+    background-image: url("/assets/img/ImgBebida4.jpeg"); 
+}
+.bebida-5 {
+    background-image: url("/assets/img/ImgBebida5.jpeg");  
+}
+
