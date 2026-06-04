@@ -986,8 +986,8 @@ main #apartado-formulario #formulario-contacto input, main #apartado-formulario 
     border: 2px solid #7b7265c8;
     border-radius: 5px;
     padding: 10px;
-    font-size:16px
-    
+    font-size:16px;
+    margin-bottom: 10px;
 }
 
 main #apartado-formulario #formulario-contacto button[type="submit"]{
