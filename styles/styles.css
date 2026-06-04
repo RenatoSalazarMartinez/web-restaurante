@@ -861,3 +861,150 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
     background-image: url("/assets/img/ImgBebida5.jpeg");  
 }
 
+
+
+/*ESTILOS DE CONTACTO.HTML*/
+main #contacto-presentacion {
+    border: 10px solid blue;
+    background-image: url("/assets/img/ImgFondoContacto.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+main #contacto-presentacion .capa-oscura{
+    border: 10px solid rgb(0, 255, 221);
+    height: 100vh;
+    background: rgba(55, 56, 57, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #contacto-presentacion .capa-oscura .contenido-capa{
+    border: 10px solid rebeccapurple;
+    padding: 30px;
+    width: 60%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+main #contacto-presentacion .capa-oscura .contenido-capa h2{
+    margin-bottom: 1rem;
+}
+
+main #contacto-presentacion .capa-oscura .contenido-capa .btn-contacto{
+    border: 3px solid white;
+    border-radius: 40px;
+    margin-top:20px;
+    margin-bottom: 1rem;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main #contacto-presentacion .capa-oscura .contenido-capa .btn-contacto:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    transition: 0.3s ease;
+}
+
+main #apartado-formulario{
+    border: 10px solid #ce4b09;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 40px;
+    padding: 50px;
+}
+
+main #apartado-formulario .tarjeta-complemento{
+    border: none;
+    width: 30%;
+    align-content: center;
+    text-align: center;
+    line-height: 1.8rem;
+    background-color: #fff5e7c8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: auto;
+    padding: 20px;
+}
+
+main #apartado-formulario .tarjeta-complemento h3{
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+main #apartado-formulario .tarjeta-complemento p{
+    /*border: 10px solid royalblue;*/
+    padding: 0 30px;
+    font-size: 18px;
+}
+
+main #apartado-formulario .tarjeta-complemento .contacto-lista, .horarios-lista{
+    list-style: none;
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    margin: 10px;
+    /*border: 10px solid red;*/
+}
+
+main #apartado-formulario #formulario-contacto{
+    border: 10px solid rgb(37, 236, 140);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    background-color: #fff5e7c8;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    margin: auto;
+}
+
+
+main #apartado-formulario #formulario-contacto h2{
+    font-size: 2rem;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+main #apartado-formulario #formulario-contacto label{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+main #apartado-formulario #formulario-contacto input, main #apartado-formulario #formulario-contacto textarea{
+    border: 2px solid #7b7265c8;
+    border-radius: 5px;
+    padding: 10px;
+    font-size:16px
+    
+}
+
+main #apartado-formulario #formulario-contacto button[type="submit"]{
+    background-color:#393330;
+    color: #fff;
+    border:none;
+    border-radius: 7px;
+    padding: 10px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 10px;
+    width: 50%;
+    align-self: center;
+}
+
+main #apartado-formulario #formulario-contacto button[type="submit"]:hover{
+    background-color: #4A3B32;
+    transition: all 0.3s ease; 
+}
