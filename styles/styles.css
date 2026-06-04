@@ -865,7 +865,7 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
 
 /*ESTILOS DE CONTACTO.HTML*/
 main #contacto-presentacion {
-    border: 10px solid blue;
+    /*border: 10px solid blue;*/
     background-image: url("/assets/img/ImgFondoContacto.jpeg");
     background-size: cover;
     background-attachment: fixed;
@@ -875,7 +875,7 @@ main #contacto-presentacion {
 }
 
 main #contacto-presentacion .capa-oscura{
-    border: 10px solid rgb(0, 255, 221);
+   /* border: 10px solid rgb(0, 255, 221);*/
     height: 100vh;
     background: rgba(55, 56, 57, 0.7);
     display: flex;
@@ -885,7 +885,7 @@ main #contacto-presentacion .capa-oscura{
 }
 
 main #contacto-presentacion .capa-oscura .contenido-capa{
-    border: 10px solid rebeccapurple;
+    /*border: 10px solid rebeccapurple;*/
     padding: 30px;
     width: 60%;
     font-size: 1.8rem;
@@ -916,7 +916,7 @@ main #contacto-presentacion .capa-oscura .contenido-capa .btn-contacto:hover{
 }
 
 main #apartado-formulario{
-    border: 10px solid #ce4b09;
+    /*border: 10px solid #ce4b09;*/
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -957,7 +957,7 @@ main #apartado-formulario .tarjeta-complemento .contacto-lista, .horarios-lista{
 }
 
 main #apartado-formulario #formulario-contacto{
-    border: 10px solid rgb(37, 236, 140);
+    /*border: 10px solid rgb(37, 236, 140);*/
     display: flex;
     flex-direction: column;
     justify-content: space-between;
