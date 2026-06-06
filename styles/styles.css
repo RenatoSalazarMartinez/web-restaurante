@@ -461,10 +461,6 @@ main #presentacion-contenido .capa-oscura .contenido-capa .btn-reserva:hover{
     transition: 0.3 ease;
 }
 
-main #historia{
-    /*border: 10px solid cornflowerblue;*/
-}
-
 main #historia .contenido{
     /*border: 10px solid rgb(79, 110, 168);*/
     display: flex;
@@ -1331,6 +1327,9 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
         gap: 20px;
     }
 
+
+
+
     /*DISEÑO RESPONSIVO NOSOTROS.HTML*/
   
     main #presentacion-contenido .contenido-capa{
@@ -1405,4 +1404,35 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
     main #mapa-restaurante, main #mapa-restaurante .mapa iframe {
         height: 350px;
     } 
+
+
+
+    /*DISEÑO RESPONSIVO CARTA.HTML*/
+    main #carta-contenido{
+        background-attachment: scroll;
+        background-position: center;
+        height: auto;
+    }
+
+    main #carta-contenido .capa-oscura{
+        height: auto;
+        padding: 80px 20px;
+    }
+
+    main #carta-contenido .capa-oscura .contenido {
+        width: 90%;
+        padding: 10px;
+        font-size: 1.4rem;
+    }
+
+    main #entradas-carta .platos-grid-layout .plato-tarjeta {
+        width: 90%;
+        height: 35vh;
+        margin: 10px 0;
+    }
+
+    .separacion-carta {
+        margin: 10px 20px;
+    }
+
 }
