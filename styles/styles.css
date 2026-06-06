@@ -1008,3 +1008,60 @@ main #apartado-formulario #formulario-contacto button[type="submit"]:hover{
     background-color: #4A3B32;
     transition: all 0.3s ease; 
 }
+
+
+
+
+/*ESTILOS BLOG.HTML*/
+/*ESTILOS DE CONTACTO.HTML*/
+main #blog-presentacion {
+    /*border: 10px solid blue;*/
+    background-image: url("/assets/img/ImgFondoContacto.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+    color: #fff;
+    text-align: center;
+}
+
+main #blog-presentacion .capa-oscura{
+   /* border: 10px solid rgb(0, 255, 221);*/
+    height: 100vh;
+    background: rgba(55, 56, 57, 0.7);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+main #blog-presentacion .capa-oscura .contenido-capa{
+    /*border: 10px solid rebeccapurple;*/
+    padding: 30px;
+    width: 60%;
+    font-size: 1.8rem;
+    line-height: 2.5rem;
+}
+
+main #blog-presentacion .capa-oscura .contenido-capa h2{
+    margin-bottom: 1rem;
+}
+
+main #blog-presentacion .capa-oscura .contenido-capa .btn-blog{
+    border: 3px solid white;
+    border-radius: 40px;
+    margin-top:20px;
+    margin-bottom: 1rem;
+    padding: 15px 40px;
+    font-size: 1.1rem;
+    background: none;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+main #blog-presentacion .capa-oscura .contenido-capa .btn-blog:hover{
+    text-decoration: underline;
+    text-underline-offset: 7px;
+    transition: 0.3s ease;
+}
+
