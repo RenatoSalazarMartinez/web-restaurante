@@ -412,6 +412,7 @@ footer .copyright {
 main #presentacion-contenido{
     background-image: url("/assets/img/ImgFondoNosotros.jpeg");
     background-size: cover;
+    background-position: center;
     height: 100vh;
     overflow: hidden;
     justify-content: center;
@@ -439,6 +440,7 @@ main #presentacion-contenido .capa-oscura .contenido-capa h2{
     /*border: 10px solid rgb(38, 130, 23);*/
     margin-bottom: 1rem;
     padding: 10px;
+    line-height: 3rem;
 }
 
 main #presentacion-contenido .capa-oscura .contenido-capa .btn-reserva{
@@ -1328,4 +1330,79 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
         align-items: center;
         gap: 20px;
     }
+
+    /*DISEÑO RESPONSIVO NOSOTROS.HTML*/
+  
+    main #presentacion-contenido .contenido-capa{
+        font-size: 1.2rem;
+        line-height: 1.5rem;
+        padding: 15px;
+    }
+    
+    main #presentacion-contenido .contenido-capa h2{
+        font-size: 2rem;
+        line-height: 2.2rem;
+        padding: 5px;
+    }
+
+    main #historia .contenido{
+        display: flex;
+        flex-direction: column;
+    }
+
+    main #historia .contenido .contenido-texto{
+        padding: 20px;
+        width: 100%;
+        line-height: 1.6rem;
+        font-size: 1.1rem;
+    }
+
+    main #historia .contenido .contenido-texto h2, main #historia .contenido .contenido-texto p{
+        padding: 20px;
+    }
+
+    main #historia .contenido .imagen-historia{
+        width: 100%;
+        height: auto;
+    }
+
+    main #objetivo-restaurante, main #objetivo-restaurante .capa-oscura{
+        height: auto;
+    }
+
+    main #objetivo-restaurante .capa-oscura h2{
+        font-size: 1.8rem;
+        line-height: 2rem;
+        margin: 20px 10px;
+    }
+    
+    main #objetivo-restaurante .capa-oscura .contenido-grupo{
+        grid-template-columns: 1fr;
+        margin: auto;
+    }
+    
+    main #objetivo-restaurante .contenido:not(:last-child) {
+        border-right: none; 
+        border-bottom: 2px solid rgba(255, 255, 255, 0.5); /* Línea divisoria horizontal*/
+        padding-bottom: 30px;
+        margin: 20px 30px;
+    }
+
+    main #equipo-restaurante .contenido-texto{
+        width: 100%;
+        padding: 20px;
+    }
+
+    main #equipo-restaurante hr {
+        margin: 1rem 20px;
+    }
+
+    main #equipo-restaurante .presentacion-equipo .personal{
+        width: 90%;
+        padding: 20px;
+    }
+
+    main #mapa-restaurante, main #mapa-restaurante .mapa iframe {
+        height: 350px;
+    } 
 }
