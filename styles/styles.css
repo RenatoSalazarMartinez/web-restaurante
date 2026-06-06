@@ -1155,4 +1155,44 @@ main #blog-suscripcion .tarjeta-suscripcion{
     text-align: center;
 }
 
+main #blog-suscripcion .tarjeta-suscripcion h2 {
+    margin-bottom: 15px;
+}
+
+main #blog-suscripcion .tarjeta-suscripcion p{
+    line-height: 1.8rem;
+    margin-bottom: 20px;
+}
+
+main #blog-suscripcion .tarjeta-suscripcion form{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+main #blog-suscripcion .tarjeta-suscripcion form input[type="email"], [type="text"]{
+    padding: 10px;
+    border: 2px solid #7b7265c8;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion{
+    background-color: #393330;
+    color: #fff;
+    border: none;
+    border-radius: 7px;
+    padding: 10px 20px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    cursor: pointer;
+    transform: translateY(0);
+    transition: transform 0.3s ease;
+}
+
+main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
+    background-color: #4A3B32;
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+}
 
