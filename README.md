@@ -46,4 +46,4 @@ El sitio está compuesto por las siguientes páginas:
 
 ## 👤 Autor
 
-Desarrollado con pasión por [Tu Nombre o Tu Usuario de GitHub](https://github.com/tu-usuario).
+Desarrollado con pasión por [Stefano Renato Salazar Martínez](https://github.com/RenatoSalazarMartinez).
