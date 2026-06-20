@@ -1224,15 +1224,34 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
         gap: 1rem;
     }
 
+    header nav .logo {
+        order: 2;
+    }
+
+    header nav .btn-reservar {
+        order: 3;
+    }
+
     header nav ul {
+        display: none;        
+        flex-direction: column; 
+        gap: 1.2rem;
+        width: 100%;        
+        text-align: center;
+        padding: 20px 0 10px 0;
+        margin: 0;
+    }
+
+    header nav.activo ul {
+        display: flex;
+    }
+
+    header nav.activo .menu-hamburguesa .icono-abrir {
         display: none;
-        flex-direction: column;
-        gap: 0.5rem;
-        position: absolute;
-        width: 100%;
-        top: 0;
-        left: 0;
-        padding: 20px;
+    }
+
+    header nav.activo .menu-hamburguesa .icono-cerrar {
+        display: block;
     }
 
     header nav .menu-hamburguesa{
@@ -1320,6 +1339,7 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
         align-items: center;
         gap: 20px;
         justify-content: center;
+        text-align: center;
     }
 
     footer .footer-content .informacion-contenedor{
@@ -1327,6 +1347,7 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
         flex-direction: column;
         align-items: center;
         gap: 20px;
+        text-align: center;
     }
 
 
