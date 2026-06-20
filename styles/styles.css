@@ -1178,6 +1178,8 @@ main #blog-suscripcion .tarjeta-suscripcion form{
     display: flex;
     justify-content: center;
     gap: 20px;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 main #blog-suscripcion .tarjeta-suscripcion form input[type="email"], [type="text"]{
@@ -1185,6 +1187,7 @@ main #blog-suscripcion .tarjeta-suscripcion form input[type="email"], [type="tex
     border: 2px solid #7b7265c8;
     border-radius: 5px;
     font-size: 16px;
+    max-width: 100%; /* Evita que el input sea más grande que la pantalla */
 }
 
 main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion{
@@ -1483,4 +1486,81 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
         padding: 12px; 
     }
 
+
+
+    /*Diseño responsivo de Blog.HTML*/
+    main #blog-presentacion {
+        background-attachment: scroll;
+        height: auto !important;
+    }
+
+    main #blog-presentacion .capa-oscura {
+        height: auto !important;
+        padding: 60px 20px;
+    }
+
+    main #blog-presentacion .capa-oscura .contenido-capa {
+        width: 95%;
+        padding: 10px;
+        font-size: 1.3rem;
+        line-height: 2rem;
+    }
+
+    main #blog-contenido {
+        padding: 15px;
+    }
+
+    main #blog-contenido .tarjeta-presentacion {
+        font-size: 1.2rem;
+        line-height: 2rem;
+        padding: 10px;
+    }
+
+    main #blog-contenido .tarjetas-blog {
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+
+    main #blog-contenido .tarjetas-blog .tarjeta-blog {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 1.1rem;
+    }
+
+    main #blog-contenido .tarjetas-blog .tarjeta-blog .btn-leer-mas {
+        width: 100%;
+        text-align: center;
+    }
+
+    main #blog-suscripcion {
+        padding: 30px 15px;
+    }
+
+    main #blog-suscripcion .tarjeta-suscripcion {
+        width: 100%;
+        box-sizing: border-box;
+        padding: 25px 15px;
+    }
+
+    main #blog-suscripcion .tarjeta-suscripcion p {
+        font-size: 1.1rem;
+    }
+
+    main #blog-suscripcion .tarjeta-suscripcion form {
+        flex-direction: column;
+        gap: 15px;
+        width: 100%;
+    }
+
+    main #blog-suscripcion .tarjeta-suscripcion form input[type="email"], 
+    main #blog-suscripcion .tarjeta-suscripcion form [type="text"] {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion {
+        width: 100%; 
+        padding: 12px;
+    }
 }
