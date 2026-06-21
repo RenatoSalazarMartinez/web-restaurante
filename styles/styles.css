@@ -363,7 +363,7 @@ main .separacion{
     /*border: 10px solid red;*/
     width: 35%;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
-    animation: aparecer 0.3s ease;
+    animation: aparecer 0.5s ease;
 }
 
 

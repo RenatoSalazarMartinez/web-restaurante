@@ -104,7 +104,24 @@ if (formularioBlog) {
     });
 }
 
+//Funcionalidad del modal del INDEX.HTML
+const botonReserva = document.querySelector(".btn-reservar");
+const capaOscura = document.querySelector(".modal-oscuro");
+const botonCerrarModal = document.getElementById("btn-cerrar-modal-reserva");
 
+if (botonReserva) {
+    botonReserva.addEventListener("click", () =>{
+        capaOscura.style.display = "flex";
+    })
+    botonCerrarModal.addEventListener("click", () => {
+        capaOscura.style.display = "none";
+    })
+    capaOscura.addEventListener("click", (event) => {
+        if (event.target === capaOscura) {
+            capaOscura.style.display = "none";
+        }
+    })
+}
 
 //FUNCIONES
 function validarCampos(nombre, email, telefono, asunto, mensaje){
