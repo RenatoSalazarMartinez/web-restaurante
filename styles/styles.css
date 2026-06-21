@@ -344,6 +344,103 @@ main .separacion{
     margin: 0 2rem;
 }
 
+.modal-oscuro {
+    width: 100%;
+    top: 0;
+    left: 0;
+    position: fixed;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6);
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.modal-oscuro .modal{
+    background-color: #bdae99;
+    padding: 20px;
+    border-radius: 10px;
+    /*border: 10px solid red;*/
+    width: 35%;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+    animation: aparecer 0.3s ease;
+}
+
+
+.modal-oscuro .modal input{
+    padding: 5px;
+    border-radius: 5px;
+    border: none;
+    font-size: 16px;
+    width: 100%;
+}
+
+
+.modal-oscuro .modal #modal-formulario-reserva #btn-cerrar-modal-reserva {
+    text-align: right;
+    cursor: pointer;
+    font-size: 24px;
+    transition: all 0.2s ease;
+}
+
+#btn-cerrar-modal-reserva:hover {
+    color: #d9534f; /* Cambia a un rojo de advertencia suave */
+    transition: all 0.2s ease; /* Hace que el cambio sea suave */
+}
+
+
+.modal-oscuro .modal #modal-formulario-reserva {
+    /*border: 10px solid aqua;*/
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.modal-oscuro .modal  #modal-formulario-reserva .campo {
+    /*border: 10px solid green;*/
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.modal-oscuro .modal  #modal-formulario-reserva .campo label{
+    font-weight: bold;
+}
+
+.modal-oscuro .modal  #modal-formulario-reserva .campo-botones {
+    /*border: 10px solid rebeccapurple;*/
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.modal-oscuro .modal .campo-botones button{
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    background-color: #fff5e7;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 14px;
+    margin-bottom: 10px;
+    transition: 0.3s ease;
+}
+
+.modal-oscuro .modal .campo-botones button:hover {
+    background-color: #ece9e4;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+.modal-oscuro .modal h2{
+    text-align: center;
+}
+
+@keyframes aparecer {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
 footer {
     background-color: #393330;
     color: #fff;
