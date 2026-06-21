@@ -104,6 +104,9 @@ if (formularioBlog) {
     });
 }
 
+
+
+//FUNCIONES
 function validarCampos(nombre, email, telefono, asunto, mensaje){
     if (nombre.trim().length < 3 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/.test(nombre)) {
         alert("Por favor, ingresa un nombre válido (mínimo 3 caracteres, solo letras).");

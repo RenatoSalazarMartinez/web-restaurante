@@ -5,6 +5,10 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     background-color: #F7F4EF;
     color: #4A3B32;
@@ -679,6 +683,7 @@ main #carta-contenido .capa-oscura .contenido h2{
 
 main #carta-contenido .capa-oscura .contenido p {
     line-height: 2.5rem;
+    margin-bottom: 1rem;
 }
 
 main #carta-contenido .capa-oscura .contenido #btn-verCarta{
@@ -691,6 +696,7 @@ main #carta-contenido .capa-oscura .contenido #btn-verCarta{
     background: none;
     color: #fff;
     cursor: pointer;
+    text-decoration: none;
 }
 
 main #carta-contenido .capa-oscura .contenido #btn-verCarta:hover{
@@ -906,6 +912,11 @@ main #contacto-presentacion .capa-oscura .contenido-capa h2{
     margin-bottom: 1rem;
 }
 
+main #contacto-presentacion .capa-oscura .contenido-capa p{
+    margin-bottom: 1rem;
+}
+
+
 main #contacto-presentacion .capa-oscura .contenido-capa .btn-contacto{
     border: 3px solid white;
     border-radius: 40px;
@@ -917,6 +928,7 @@ main #contacto-presentacion .capa-oscura .contenido-capa .btn-contacto{
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 main #contacto-presentacion .capa-oscura .contenido-capa .btn-contacto:hover{
@@ -1055,6 +1067,10 @@ main #blog-presentacion .capa-oscura .contenido-capa h2{
     margin-bottom: 1rem;
 }
 
+main #blog-presentacion .capa-oscura .contenido-capa p{
+    margin-bottom: 1rem;
+}
+
 main #blog-presentacion .capa-oscura .contenido-capa .btn-blog{
     border: 3px solid white;
     border-radius: 40px;
@@ -1066,6 +1082,7 @@ main #blog-presentacion .capa-oscura .contenido-capa .btn-blog{
     color: #fff;
     cursor: pointer;
     transition: all 0.3s ease;
+    text-decoration: none;
 }
 
 main #blog-presentacion .capa-oscura .contenido-capa .btn-blog:hover{
