@@ -105,23 +105,27 @@ if (formularioBlog) {
 }
 
 //Funcionalidad del modal del INDEX.HTML
-const botonReserva = document.querySelector(".btn-reservar");
-const capaOscura = document.querySelector(".modal-oscuro");
-const botonCerrarModal = document.getElementById("btn-cerrar-modal-reserva");
+document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTML de la página esté listo
+    inicializarModal();
 
-if (botonReserva) {
-    botonReserva.addEventListener("click", () =>{
-        capaOscura.style.display = "flex";
-    })
-    botonCerrarModal.addEventListener("click", () => {
-        capaOscura.style.display = "none";
-    })
-    capaOscura.addEventListener("click", (event) => {
-        if (event.target === capaOscura) {
+    const botonReserva = document.querySelector(".btn-reservar");
+    const capaOscura = document.querySelector(".modal-oscuro");
+    const botonCerrarModal = document.getElementById("btn-cerrar-modal-reserva");
+
+    if (botonReserva) {
+        botonReserva.addEventListener("click", () =>{
+            capaOscura.style.display = "flex";
+        });
+        botonCerrarModal.addEventListener("click", () => {
             capaOscura.style.display = "none";
-        }
-    })
-}
+        });
+        capaOscura.addEventListener("click", (event) => {
+            if (event.target === capaOscura) {
+                capaOscura.style.display = "none";
+            }
+        });
+    }
+});
 
 //FUNCIONES
 function validarCampos(nombre, email, telefono, asunto, mensaje){
@@ -168,4 +172,46 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
     }
 
     return true;
+}
+
+//Funcion para inicializar el modal para realizar reservas rapidas
+function inicializarModal(){
+    document.body.insertAdjacentHTML('beforeend', `
+        <div class="modal-oscuro">
+        <div class="modal">
+            <form action="" id="modal-formulario-reserva">
+                <span id="btn-cerrar-modal-reserva" class="btn-cerrar">&times;</span>
+                <h2>Reserva ahora</h2>
+                <div class="campo">
+                    <label for="nombre-reserva"><i class="fas fa-user"></i> Nombre:</label>
+                    <input type="text" name="nombre" id="nombre-reserva" required>
+                </div>
+
+                <div class="campo">
+                    <label for="fecha-reserva"><i class="fas fa-calendar-alt"></i> Fecha:</label>
+                    <input type="date" name="fecha" id="fecha-reserva" required>
+                </div>
+
+                <div class="campo">
+                    <label for="hora-reserva"><i class="fas fa-clock"></i> Hora:</label>
+                    <input type="time" name="hora" id="hora-reserva" required>
+                </div>
+
+                <div class="campo">
+                    <label for="personas-reserva"><i class="fas fa-users"></i> Número de personas:</label>
+                    <input type="number" name="personas" id="personas-reserva" required>
+                </div>
+
+                <div class="campo">
+                    <label for="telefono-reserva"><i class="fas fa-phone"></i> Teléfono:</label>
+                    <input type="tel" name="telefono" id="telefono-reserva" required>
+                </div>
+                
+                <div class="campo-botones">
+                    <button type="submit">Enviar mensaje</button>
+                </div>     
+            </form>
+        </div>
+    </div>    
+    `);
 }
