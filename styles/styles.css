@@ -1336,6 +1336,22 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
 
 
 /*DISEÑO DE LOS TOASTS*/
+@keyframes deslizarEntrada {
+    0% {
+        transform: translateX(120%);
+    } 100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes deslizarSalida {
+    0% {
+        transform: translateX(0);
+    } 100% {
+        transform: translateX(120%);
+    }
+}
+
 #contenedor-toast{
     /*border: 10px solid red;*/
     position: fixed;
@@ -1343,7 +1359,7 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
     right: 0px;
     padding: 15px;
     border-radius: 15px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    /*box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);*/
 }
 
 #contenedor-toast .toast {
@@ -1354,6 +1370,7 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
     border-radius: 4px;
     color: #ffffff;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+    animation: deslizarEntrada 0.5s ease-in;
 }
 
 #contenedor-toast .toast.toast-error{
@@ -1369,6 +1386,11 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
 #contenedor-toast .toast.toast-advertencia{
     background-color: var(--color-advertencia-fondo);
     border-left: 5px solid var(--color-advertencia-borde);
+}
+
+#contenedor-toast .toast.toast-salida {
+    animation: deslizarSalida 0.5s ease-in;
+    animation-fill-mode: forwards; /*congela el elemento en su último fotograma cuando la animación termina.*/
 }
 
 

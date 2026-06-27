@@ -293,6 +293,11 @@ function mostrarToast(tipo,mensaje){
 
     //funcion para que el toast desaparezca en un determinado tiempo
     setTimeout(() => {
-        nuevoToast.remove();
+        nuevoToast.classList.add('toast-salida');
+
+        setTimeout(() => {
+            nuevoToast.remove();
+        }, 500);
+
     }, 4000);
 }
