@@ -108,6 +108,63 @@ if (formularioBlog) {
 document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTML de la página esté listo
     inicializarModal();
 
+
+    // Funcionalidad para verificar los campos dentro del modal del formulario de reservas rápidas
+    const formularioModal = document.getElementById("modal-formulario-reserva");
+    if (formularioModal) {
+        formularioModal.addEventListener("submit", (event) =>{
+            event.preventDefault();
+
+            const fechaHoy = new Date().toISOString().split('T')[0];
+            const campoFecha = document.getElementById("fecha-reserva").value;
+            const campoNumPersonas = Number(document.getElementById("personas-reserva").value);
+            const campoTelefono = document.getElementById("telefono-reserva").value;
+
+            if (campoFecha < fechaHoy) {
+                alert("La fecha de la reserva no puede ser anterior al día de hoy.");
+                const inputError = document.getElementById("fecha-reserva");
+                inputError.focus();
+                inputError.style.backgroundColor = "#ffdddd";
+                return;
+            }
+
+            if (campoNumPersonas < 1 || campoNumPersonas > 10) {
+                alert("Por favor, selecciona entre 1 y 10 comensales para tu mesa. fas fa-users");
+                const inputError = document.getElementById("personas-reserva");
+                inputError.focus();
+                inputError.style.backgroundColor = "#ffdddd";
+                return;
+            }
+
+            if (campoTelefono.trim().length !== 9) {
+                alert("Por favor, ingrese un número de teléfono válido");
+                const inputError = document.getElementById("telefono-reserva");
+                inputError.focus();
+                inputError.style.backgroundColor = "#ffdddd";
+                return;
+            }
+
+            alert("¡Reserva lista! Te esperamos en Fuego & Brasa. 🔥🥩");
+            formularioModal.reset();
+        });
+
+
+    const fechaElement = document.getElementById("fecha-reserva");
+    const personasElement = document.getElementById("personas-reserva");
+    const telElement = document.getElementById("telefono-reserva");
+
+    fechaElement.addEventListener("input", () =>{
+        fechaElement.style.backgroundColor = "";
+    });
+    personasElement.addEventListener("input", () =>{
+        personasElement.style.backgroundColor = "";
+    });
+    telElement.addEventListener("input", () =>{
+        telElement.style.backgroundColor = "";
+    });
+    }
+
+
     const botonReserva = document.querySelector(".btn-reservar");
     const capaOscura = document.querySelector(".modal-oscuro");
     const botonCerrarModal = document.getElementById("btn-cerrar-modal-reserva");
@@ -126,6 +183,9 @@ document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTM
         });
     }
 });
+
+
+
 
 //FUNCIONES
 function validarCampos(nombre, email, telefono, asunto, mensaje){
