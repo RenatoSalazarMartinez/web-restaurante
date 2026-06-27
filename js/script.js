@@ -7,6 +7,51 @@ boton.addEventListener("click", () => {
 })
 
 
+//Funcionalidad del boton de ver mas resenas del index.HTML
+document.addEventListener("DOMContentLoaded", ()=> {
+    const nuevasResenas = [
+    {
+        nombre: "- Laura Benítes",
+        texto: "¡Las hamburguesas artesanales son una joya! La combinación de quesos y el toque ahumado es perfecta. Volveré sin duda.",
+        imagen: "assets/img/ImgLauraBenites.jpeg"
+    },
+    {
+        nombre: "- Ricardo Durán",
+        texto: "Excelente atención y los cortes de carne premium están en su punto exacto. El ambiente urbano con la música en vivo suma muchísimo.",
+        imagen: "assets/img/ImgRicardoDuran.jpeg"
+    }
+    ];
+
+    const botonVerResenas = document.querySelector(".btn-verResenas");
+
+    if (botonVerResenas) {
+        botonVerResenas.addEventListener("click",()=>{
+            const contenedorTestimonios = document.querySelector(".testimonios");
+
+            for (let index = 0; index < nuevasResenas.length; index++) {
+                const testimonioData = nuevasResenas[index];
+                const nuevoTestimonioDiv = document.createElement("div");
+                
+                nuevoTestimonioDiv.classList.add('testimonio');
+                nuevoTestimonioDiv.innerHTML = `
+                    <img src="${testimonioData.imagen}" alt="${testimonioData.nombre}" class="testimonio-imagen"></img>
+                    <p><span class="nombre-persona">${testimonioData.nombre}</span><br>${testimonioData.texto}</p>
+                    `;
+
+                contenedorTestimonios.appendChild(nuevoTestimonioDiv);
+            }
+            botonVerResenas.textContent = "No hay más reseñas";
+            botonVerResenas.disabled = true;
+            botonVerResenas.style.opacity = "0.6";
+            botonVerResenas.style.cursor = "not-allowed";                
+        }); 
+    }
+});
+
+
+
+
+
 //Funcionalidad del formulario de contacto.HTML
 const formulario = document.getElementById("formulario-contacto");
 
