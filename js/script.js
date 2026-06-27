@@ -237,6 +237,12 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
 //Funcion para inicializar el modal para realizar reservas rapidas
 function inicializarModal(){
     document.body.insertAdjacentHTML('beforeend', `
+        <div id="contenedor-toast">
+            <p>sdsdsdddddddddddddddddddddddddddddddddd</p>
+            <p>sdsdsdddddddddddddddddddddddddddddddddd</p>
+            <p>sdsdsdddddddddddddddddddddddddddddddddd</p>
+        </div>
+        
         <div class="modal-oscuro">
         <div class="modal">
             <form action="" id="modal-formulario-reserva">

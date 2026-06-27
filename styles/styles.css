@@ -5,6 +5,15 @@
     font-family: 'Open Sans', sans-serif;
 }
 
+:root {
+    --color-exito-fondo: #1e291b;
+    --color-exito-borde: #4caf50;
+    --color-error-fondo: #2c1616;
+    --color-error-borde: #e53935;
+    --color-advertencia-fondo: #2d2214;
+    --color-advertencia-borde: #ffb300;
+}
+
 html {
     scroll-behavior: smooth;
 }
@@ -1321,6 +1330,45 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
     background-color: #4A3B32;
     transform: translateY(-5px);
     transition: transform 0.3s ease;
+}
+
+
+
+
+/*DISEÑO DE LOS TOASTS*/
+#contenedor-toast{
+    border: 10px solid red;
+    position: fixed;
+    top: 20%;
+    right: 20px;
+    padding: 15px;
+    border-radius: 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#contenedor-toast .toast {
+    display: flex;
+    align-items: center;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+#contenedor-toast .toast.toast-error{
+    background-color: var(--color-error-fondo);
+    border-left: 5px solid var(--color-error-borde);
+}
+
+#contenedor-toast .toast.toast-exito{
+    background-color: var(--color-exito-fondo);
+    border-left: 5px solid var(--color-exito-borde);
+}
+
+#contenedor-toast .toast.toast-advertencia{
+    background-color: var(--color-advertencia-fondo);
+    border-left: 5px solid var(--color-advertencia-borde);
 }
 
 
