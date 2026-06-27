@@ -24,7 +24,7 @@ if (formulario) {
     const verificacion = validarCampos(nombreInput, emailInput, telefonoInput, asuntoInput, mensajeInput);
 
     if (verificacion) {
-        alert("Envío satisfactorio")
+        mostrarToast('exito', '¡Envío satisfactorio!')
         formulario.reset();
     }   
     });
@@ -280,4 +280,21 @@ function inicializarModal(){
         </div>
     </div>    
     `);
+}
+
+function mostrarToast(tipo,mensaje){
+    const nuevoToast = document.createElement('div');
+    nuevoToast.classList.add('toast');
+    nuevoToast.classList.add(`toast-${tipo}`);
+
+    nuevoToast.textContent = mensaje;
+
+    const contenedorToast = document.getElementById("contenedor-toast");
+
+    contenedorToast.appendChild(nuevoToast);
+
+    //funcion para que el toast desaparezca en un determinado tiempo
+    setTimeout(() => {
+        nuevoToast.remove();
+    }, 4000);
 }
