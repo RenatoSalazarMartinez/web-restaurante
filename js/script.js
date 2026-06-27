@@ -68,7 +68,7 @@ if (formularioBlog) {
     const correoInput = document.getElementById("email-suscripcion").value;
 
     if (nombreInput.trim().length < 3 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/.test(nombreInput)) {
-        alert("Por favor, ingresa un nombre válido (mínimo 3 caracteres y solo letras).");
+        mostrarToast("error", "Por favor, ingresa un nombre válido (mínimo 3 caracteres y solo letras).");
 
         const inputError = document.getElementById("nombre-suscripcion");
         inputError.focus();
@@ -78,7 +78,7 @@ if (formularioBlog) {
     }
 
     if (correoInput.trim().length === 0 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(correoInput)) {
-        alert("Por favor, ingresa un correo electrónico válido.");
+        mostrarToast("error","Por favor, ingresa un correo electrónico válido.");
         
         const inputError = document.getElementById("email-suscripcion");
         inputError.focus();
@@ -87,7 +87,7 @@ if (formularioBlog) {
         return false;
     }
 
-    alert("Datos enviados correctamente");
+    mostrarToast("exito", "Datos enviados correctamente");
     formularioBlog.reset();
     })
 
@@ -121,7 +121,7 @@ document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTM
             const campoTelefono = document.getElementById("telefono-reserva").value;
 
             if (campoFecha < fechaHoy) {
-                alert("La fecha de la reserva no puede ser anterior al día de hoy.");
+                mostrarToast("error","La fecha de la reserva no puede ser anterior al día de hoy.");
                 const inputError = document.getElementById("fecha-reserva");
                 inputError.focus();
                 inputError.style.backgroundColor = "#ffdddd";
@@ -129,7 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTM
             }
 
             if (campoNumPersonas < 1 || campoNumPersonas > 10) {
-                alert("Por favor, selecciona entre 1 y 10 comensales para tu mesa. fas fa-users");
+                mostrarToast("error", "Por favor, selecciona entre 1 y 10 comensales para tu mesa.");
                 const inputError = document.getElementById("personas-reserva");
                 inputError.focus();
                 inputError.style.backgroundColor = "#ffdddd";
@@ -137,14 +137,14 @@ document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTM
             }
 
             if (campoTelefono.trim().length !== 9) {
-                alert("Por favor, ingrese un número de teléfono válido");
+                mostrarToast("error", "Por favor, ingrese un número de teléfono válido");
                 const inputError = document.getElementById("telefono-reserva");
                 inputError.focus();
                 inputError.style.backgroundColor = "#ffdddd";
                 return;
             }
 
-            alert("¡Reserva lista! Te esperamos en Fuego & Brasa. 🔥🥩");
+            mostrarToast("exito", "¡Reserva lista! Te esperamos en Fuego & Brasa. 🔥🥩")
             formularioModal.reset();
         });
 
@@ -190,7 +190,7 @@ document.addEventListener("DOMContentLoaded", () => {  // Esperamos a que el HTM
 //FUNCIONES
 function validarCampos(nombre, email, telefono, asunto, mensaje){
     if (nombre.trim().length < 3 || !/^[a-zA-ZáéíóúÁÉÍÓÚñÑ ]+$/.test(nombre)) {
-        alert("Por favor, ingresa un nombre válido (mínimo 3 caracteres, solo letras).");
+        mostrarToast("error", "Por favor, ingresa un nombre válido (mínimo 3 caracteres, solo letras).");
         
         const inputError = document.getElementById("nombre");
         inputError.focus();
@@ -200,7 +200,7 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
     }
     
     if (email.trim().length === 0 || !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
-        alert("Por favor, ingresa un córreo electrónico válido");
+        mostrarToast("error", "Por favor, ingresa un córreo electrónico válido");
         const inputError = document.getElementById("email");
         inputError.focus();
         inputError.style.backgroundColor = "#ffdddd";
@@ -208,7 +208,7 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
     }    
 
     if (telefono.trim().length === 0 || !/^\+?[0-9 ]{9,15}$/.test(telefono)) {
-        alert("Por favor, ingrese un número de teléfono válido");
+        mostrarToast("error", "Por favor, ingrese un número de teléfono válido");
         const inputError = document.getElementById("telefono");
         inputError.focus();
         inputError.style.backgroundColor = "#ffdddd";
@@ -216,7 +216,7 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
     }
 
     if (asunto.trim().length < 5) {
-        alert("Por favor, el asunto debe tener una longitud mínima de 5 caracteres");
+        mostrarToast("error", "Por favor, el asunto debe tener una longitud mínima de 5 caracteres");
         const inputError = document.getElementById("asunto");
         inputError.focus();
         inputError.style.backgroundColor = "#ffdddd";
@@ -224,7 +224,7 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
     }
 
     if (mensaje.trim().length < 10) {
-        alert("Por favor, el mensaje debe tener una longitud mínima de 10 caracteres");
+        mostrarToast("error", "Por favor, el mensaje debe tener una longitud mínima de 10 caracteres");
         const inputError = document.getElementById("mensaje");
         inputError.focus();
         inputError.style.backgroundColor = "#ffdddd";
@@ -238,9 +238,7 @@ function validarCampos(nombre, email, telefono, asunto, mensaje){
 function inicializarModal(){
     document.body.insertAdjacentHTML('beforeend', `
         <div id="contenedor-toast">
-            <p>sdsdsdddddddddddddddddddddddddddddddddd</p>
-            <p>sdsdsdddddddddddddddddddddddddddddddddd</p>
-            <p>sdsdsdddddddddddddddddddddddddddddddddd</p>
+            
         </div>
         
         <div class="modal-oscuro">

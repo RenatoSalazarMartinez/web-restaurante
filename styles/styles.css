@@ -1337,10 +1337,10 @@ main #blog-suscripcion .tarjeta-suscripcion form .btn-suscripcion:hover{
 
 /*DISEÑO DE LOS TOASTS*/
 #contenedor-toast{
-    border: 10px solid red;
+    /*border: 10px solid red;*/
     position: fixed;
-    top: 20%;
-    right: 20px;
+    top: 10%;
+    right: 0px;
     padding: 15px;
     border-radius: 15px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
