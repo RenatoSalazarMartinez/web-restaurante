@@ -520,7 +520,7 @@ footer .copyright {
 
 
 main #presentacion-contenido{
-    background-image: url("/assets/img/ImgFondoNosotros.jpeg");
+    background-image: url("../assets/img/ImgFondoNosotros.jpeg");
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -608,7 +608,7 @@ main #historia .contenido .imagen-historia{
 
 main #objetivo-restaurante {
     /*border: 10px solid salmon;*/
-    background-image: url("/assets/img/ImgObjetivos.jpeg");
+    background-image: url("../assets/img/ImgObjetivos.jpeg");
     height: 120vh;
     background-size: cover;
     background-attachment: fixed;
@@ -758,7 +758,7 @@ main #mapa-restaurante .mapa iframe{
 /*ESTILOS DE LA CARTA.HTML*/
 main #carta-contenido {
     /*border: 10px solid blue;*/
-    background-image: url("/assets/img/ImgFondoCarta.jpeg");
+    background-image: url("../assets/img/ImgFondoCarta.jpeg");
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -884,103 +884,103 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
 }
 
 .entrada-1 {
-    background-image: url("/assets/img/ImgPlatoEntrada1.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoEntrada1.jpeg"); 
 }
 .entrada-2 {
-    background-image: url("/assets/img/ImgPlatoEntrada2.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoEntrada2.jpeg"); 
 }
 .entrada-3 {
-    background-image: url("/assets/img/ImgPlatoEntrada3.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoEntrada3.jpeg"); 
 }
 .entrada-4 {
-    background-image: url("/assets/img/ImgPlatoEntrada4.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoEntrada4.jpeg"); 
 } 
 .entrada-5 {
-    background-image: url("/assets/img/ImgPlatoEntrada5.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoEntrada5.jpeg"); 
 }
 
 
 /*CORTES*/
 .corte-1 {
-    background-image: url("/assets/img/ImgPlatoCorte1.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte1.jpeg"); 
 }
 .corte-2 {
-    background-image: url("/assets/img/ImgPlatoCorte2.jpeg");
+    background-image: url("../assets/img/ImgPlatoCorte2.jpeg");
 }
 .corte-3 {
-    background-image: url("/assets/img/ImgPlatoCorte3.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte3.jpeg"); 
 }
 .corte-4 {
-    background-image: url("/assets/img/ImgPlatoCorte4.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte4.jpeg"); 
 }
 .corte-5 {
-    background-image: url("/assets/img/ImgPlatoCorte5.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte5.jpeg"); 
 }
 .corte-6 {
-    background-image: url("/assets/img/ImgPlatoCorte6.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte6.jpeg"); 
 }
 .corte-7 {
-    background-image: url("/assets/img/ImgPlatoCorte7.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte7.jpeg"); 
 }
 .corte-8 {
-    background-image: url("/assets/img/ImgPlatoCorte8.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoCorte8.jpeg"); 
 }
 
 
 /*GUARNICIONES*/
 .guarnicion-1 {
-    background-image: url("/assets/img/ImgPlatoGuarnicion1.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoGuarnicion1.jpeg"); 
 }
 .guarnicion-2 {
-    background-image: url("/assets/img/ImgPlatoGuarnicion2.jpeg");
+    background-image: url("../assets/img/ImgPlatoGuarnicion2.jpeg");
 }
 .guarnicion-3 {
-    background-image: url("/assets/img/ImgPlatoGuarnicion3.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoGuarnicion3.jpeg"); 
 }
 .guarnicion-4 {
-    background-image: url("/assets/img/ImgPlatoGuarnicion4.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoGuarnicion4.jpeg"); 
 }
 .guarnicion-5 {
-    background-image: url("/assets/img/ImgPlatoGuarnicion5.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoGuarnicion5.jpeg"); 
 }
 .guarnicion-6 {
-    background-image: url("/assets/img/ImgPlatoGuarnicion6.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoGuarnicion6.jpeg"); 
 } 
 
 
 /*POSTRES*/
 .postre-1 {
-    background-image: url("/assets/img/ImgPlatoPostre1.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoPostre1.jpeg"); 
 }
 .postre-2 {
-    background-image: url("/assets/img/ImgPlatoPostre2.jpeg");
+    background-image: url("../assets/img/ImgPlatoPostre2.jpeg");
 }
 .postre-3 {
-    background-image: url("/assets/img/ImgPlatoPostre3.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoPostre3.jpeg"); 
 }
 .postre-4 {
-    background-image: url("/assets/img/ImgPlatoPostre4.jpeg"); 
+    background-image: url("../assets/img/ImgPlatoPostre4.jpeg"); 
 }
 .postre-5 {
-    background-image: url("/assets/img/ImgPlatoPostre5.jpeg");  
+    background-image: url("../assets/img/ImgPlatoPostre5.jpeg");  
 }
 
 
 /*BEBIDAS*/
 .bebida-1 {
-    background-image: url("/assets/img/ImgBebida1.jpeg"); 
+    background-image: url("../assets/img/ImgBebida1.jpeg"); 
 }
 .bebida-2 {
-    background-image: url("/assets/img/ImgBebida2.jpeg");
+    background-image: url("../assets/img/ImgBebida2.jpeg");
 }
 .bebida-3 {
-    background-image: url("/assets/img/ImgBebida3.jpeg"); 
+    background-image: url("../assets/img/ImgBebida3.jpeg"); 
 }
 .bebida-4 {
-    background-image: url("/assets/img/ImgBebida4.jpeg"); 
+    background-image: url("../assets/img/ImgBebida4.jpeg"); 
 }
 .bebida-5 {
-    background-image: url("/assets/img/ImgBebida5.jpeg");  
+    background-image: url("../assets/img/ImgBebida5.jpeg");  
 }
 
 
@@ -988,7 +988,7 @@ main #entradas-carta .platos-grid-layout .plato-tarjeta .contenido-capa:hover{
 /*ESTILOS DE CONTACTO.HTML*/
 main #contacto-presentacion {
     /*border: 10px solid blue;*/
-    background-image: url("/assets/img/ImgFondoContacto.jpeg");
+    background-image: url("../assets/img/ImgFondoContacto.jpeg");
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
@@ -1143,7 +1143,7 @@ main #apartado-formulario #formulario-contacto button[type="submit"]:hover{
 /*ESTILOS BLOG.HTML*/
 main #blog-presentacion {
     /*border: 10px solid blue;*/
-    background-image: url("/assets/img/ImgBlogPresentacion.jpeg");
+    background-image: url("../assets/img/ImgBlogPresentacion.jpeg");
     background-size: cover;
     background-attachment: fixed;
     height: 100vh;
