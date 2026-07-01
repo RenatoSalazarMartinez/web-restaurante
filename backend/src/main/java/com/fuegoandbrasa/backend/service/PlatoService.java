@@ -23,4 +23,22 @@ public class PlatoService {
         return platoRepository.save(plato);
     }
 
+    public Plato obtenerPlatoPorId(Long id){
+        return platoRepository.findById(id)
+        .orElseThrow(() -> new RuntimeException("Plato no encontrado con el id: "+id));
+    }
+
+    public Plato actualizarPlato(Long id, Plato platoActualizado){
+        Plato platoExistente = obtenerPlatoPorId(id);
+
+        platoExistente.setNombre(platoActualizado.getNombre());
+        platoExistente.setPrecio(platoActualizado.getPrecio());
+        platoExistente.setDescripcion(platoActualizado.getDescripcion());
+
+        return platoRepository.save(platoExistente);
+    }
+
+    public void eliminarPlato(Long id){
+        platoRepository.deleteById(id);
+    }
 }

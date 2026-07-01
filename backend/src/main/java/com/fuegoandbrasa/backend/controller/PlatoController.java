@@ -4,6 +4,10 @@ import com.fuegoandbrasa.backend.model.Plato;
 import com.fuegoandbrasa.backend.service.PlatoService;
 import org.springframework.web.bind.annotation.*;
 import java.util.List;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+
+
 
 
 
@@ -26,5 +30,21 @@ public class PlatoController {
     public Plato crearPlato(@RequestBody Plato plato) {  // @RequestBody le dice a Java que tome ese JSON que viene de internet y lo transforme en un objeto
         return platoService.guardarPlato(plato);
     }
+
+    @GetMapping("/{id}")
+    public Plato obtenerPlatoPorId(@PathVariable Long id) {
+        return platoService.obtenerPlatoPorId(id);
+    }
+
+    @PutMapping("/{id}")
+    public Plato actualizarPlato(@PathVariable Long id, @RequestBody Plato platoActualizado){
+        return platoService.actualizarPlato(id, platoActualizado);
+    }
+    
+    @DeleteMapping("/{id}")
+    public void eliminarPlato(@PathVariable Long id){
+        platoService.eliminarPlato(id);
+    }
+    
     
 }
