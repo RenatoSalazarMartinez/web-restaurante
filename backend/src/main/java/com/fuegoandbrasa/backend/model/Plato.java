@@ -14,4 +14,8 @@ public class Plato {
     private String nombre;
     private String descripcion;
     private Double precio;
+
+    @ManyToOne
+    @JoinColumn(name = "categoria_id")
+    private Categoria categoria;
 }
