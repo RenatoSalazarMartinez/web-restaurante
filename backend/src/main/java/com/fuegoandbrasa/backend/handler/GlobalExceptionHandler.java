@@ -6,6 +6,8 @@ import org.springframework.http.*;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.context.request.WebRequest;
 
+import com.fuegoandbrasa.backend.exceptions.ValidacionException;
+
 @RestControllerAdvice //Esta anotación le indica a Spring que esta clase actuará como un interceptor para todos tus controladores
 public class GlobalExceptionHandler {
 
@@ -24,4 +26,19 @@ public class GlobalExceptionHandler {
             .status(HttpStatus.NOT_FOUND)
             .body(error);
     }
+
+    @ExceptionHandler(ValidacionException.class) // Captura específicamente la nueva excepción
+    public ResponseEntity<ErrorResponse> manejarValidacionException(ValidacionException ex, WebRequest request) {
+        ErrorResponse error = new ErrorResponse();
+    
+        error.setTimestamp(LocalDateTime.now());
+        error.setStatus(HttpStatus.BAD_REQUEST.value()); //Código 400
+        error.setMessage(ex.getMessage());
+        error.setPath(request.getDescription(false));
+
+        return ResponseEntity
+            .status(HttpStatus.BAD_REQUEST) // Respuesta HTTP 400
+            .body(error);
 }
+}
+ 

@@ -2,6 +2,8 @@ package com.fuegoandbrasa.backend.service;
 
 import java.util.List;
 import org.springframework.stereotype.Service;
+
+import com.fuegoandbrasa.backend.exceptions.ValidacionException;
 import com.fuegoandbrasa.backend.model.*;
 import com.fuegoandbrasa.backend.repository.ReservaRepository;
 import lombok.RequiredArgsConstructor;
@@ -20,9 +22,19 @@ public class ReservaSerivce {
     public Reserva guardarReserva(Reserva reserva){
         Cliente clienteExistente = clienteService.buscarClientePorId(reserva.getCliente().getId());
         Mesa mesaExistente = mesaService.buscarPorId(reserva.getMesa().getId());
-        reserva.setCliente(clienteExistente);
-        reserva.setMesa(mesaExistente);
-        return reservaRepository.save(reserva);
+
+        if (reserva.getCantidadPersonas() > mesaExistente.getCapacidad()) {
+            throw new ValidacionException("La cantidad de personas excede la capacidad máxima de la mesa.");
+        } else if (mesaExistente.getEstado() != EstadoMesa.LIBRE){
+            throw new ValidacionException("La mesa seleccionada no está disponible para reservarse.");
+        } else {
+            mesaExistente.setEstado(EstadoMesa.RESERVADA);
+            mesaService.actualizarEstado(mesaExistente.getId(), EstadoMesa.RESERVADA);
+
+            reserva.setCliente(clienteExistente);
+            reserva.setMesa(mesaExistente);
+            return reservaRepository.save(reserva);
+        }
     }
 
     public Reserva buscarReservaPorId(Long id){
